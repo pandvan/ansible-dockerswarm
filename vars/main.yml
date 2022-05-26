@@ -6,7 +6,7 @@ docker_architecture:
 # Docker CE stable release repository
 docker_repo_ce_stable:
   name: "docker_ce_stable"
-  yum_repo: "https://download.docker.com/linux/centos/7/$basearch/stable"
+  yum_repo: "https://download.docker.com/linux/centos/9/$basearch/stable"
   yum_gpg_key: "https://download.docker.com/linux/centos/gpg"
   yum_gpg_check: "yes"
   apt_repo: "deb [arch={{ docker_architecture[ansible_architecture] }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} stable"
@@ -16,7 +16,7 @@ docker_repo_ce_stable:
 # Docker CE edge release repository
 docker_repo_ce_edge:
   name: "docker_ce_edge"
-  yum_repo: "https://download.docker.com/linux/centos/7/$basearch/edge"
+  yum_repo: "https://download.docker.com/linux/centos/9/$basearch/edge"
   yum_gpg_key: "https://download.docker.com/linux/centos/gpg"
   yum_gpg_check: "yes"
   apt_repo: "deb [arch={{ docker_architecture[ansible_architecture] }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} edge"
@@ -26,7 +26,7 @@ docker_repo_ce_edge:
 # Docker CE test release repository
 docker_repo_ce_test:
   name: "docker_ce_test"
-  yum_repo: "https://download.docker.com/linux/centos/7/$basearch/test"
+  yum_repo: "https://download.docker.com/linux/centos/9/$basearch/test"
   yum_gpg_key: "https://download.docker.com/linux/centos/gpg"
   yum_gpg_check: "yes"
   apt_repo: "deb [arch={{ docker_architecture[ansible_architecture] }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} test"
@@ -36,7 +36,7 @@ docker_repo_ce_test:
 # Docker CE nightly release repository
 docker_repo_ce_nightly:
   name: "docker_ce_nightly"
-  yum_repo: "https://download.docker.com/linux/centos/7/$basearch/nightly"
+  yum_repo: "https://download.docker.com/linux/centos/9/$basearch/nightly"
   yum_gpg_key: "https://download.docker.com/linux/centos/gpg"
   yum_gpg_check: "yes"
   apt_repo: "deb [arch={{ docker_architecture[ansible_architecture] }}] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release }} nightly"
